@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Netflix Synopsis Spoiler Blocker",
+    "version": "1.0",
+    "description": "Removes or obfuscates next episode spoilers.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.netflix.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
