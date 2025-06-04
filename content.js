@@ -1,8 +1,6 @@
 // 使用 MutationObserver 監聽 DOM 的變化
 const targetNode = document.body;  // 我們選擇監聽整個頁面
 const config = { childList: true, subtree: true };  // 監聽子元素的變化和後代節點的變化
-
-// 定義監聽到變化後的回調函數
 const callback = function(mutationsList, observer) {
   for (let mutation of mutationsList) {
     // 檢查是否有新的節點被加入到 DOM 中
